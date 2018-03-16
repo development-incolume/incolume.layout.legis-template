@@ -1,138 +1,27 @@
 /*
-legis_3_1604540258
+legis_3k
 disponivel em:
-http://www.planalto.gov.br/CCIVIL_03/css/legis_3.css
-https://www.planalto.gov.br/CCIVIL_03/css/legis_3.css
+http://www.planalto.gov.br/ccivil_03/css/legis_3.css
+https://www.planalto.gov.br/ccivil_03/css/legis_3.css
 */
 *{
   /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
   /*font: normal 10pt Arial, Helvetica, sans-serif;*/
-  font-family: Arial, Helvetica, sans-serif;
-  /*qua set  4 21:37:10 -03 2019*/
-  /* Nova sequencia de fontes manual redação 2018 e Dec 9191/*
-  /*font-family: Calibri, Carlito, Arial, sans-serif; */
-  font-size: 10pt;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 10pt !important;
 }
-
-object{
-    width: 100%;
-    height: 50em;
-  }
-
 body{
-  margin: 1.5em;
-  margin-bottom: 40em;
+    margin-bottom: 5em;
 }
 a:link, a:visited, a:hover{
-  color: #000080;
-  font-family: arial;
+  color: #000080 !important;
+  font-family: arial !important;
 }
-.esconder{
-  display: None;
-}
-.bold{
-    font-weight: 900;
-}
-dfn,
-span.adi,
-#void del.adi,
-#view del.adi,
-#view:target del.adi,
-#textoimpressao del.adi,
-del.adi,
-#void strike.adi,
-#view strike.adi,
-#view:target strike.adi,
-#textoimpressao strike.adi,
-strike.adi {
-  /*tratamento de ADI*/
-  text-indent: 0;
-  display: inline-block;
-  text-decoration: line-through;
-  font-weight: normal;
-}
+.escoder{display: None; visibility}
 
-/* Caixa de Alerta */
-/*=================*/
-blockquote.alert{
-    border: 2px solid red;
-    margin-top: 3em;
-    padding: 2em;
-    text-align: center;
-}
-
-blockquote.alert i{
-    color: rgb(232,209,0);
-    font-size: 4em;
-}
-
-blockquote.alert p{
-    font-size: 2em;
-    text-align: center;
-}
-
-blockquote.alert p a{
-    font-size: 1em;
-    text-align: center;
-}
-
-/*   Nav retratil  */
-/*=================*/
-#something,
-nav ul li, input,
-nav ul input:checked ~li label.abrir {
-  display:none;
-}
-
-nav ul li{
-  text-decoration: none !important;
-}
-
-nav ul input:checked ~li,
-nav ul li.fixo, li.abrir {
-    display: block;
-}
-
-nav ul li label {
-  color: #000080;
-  /*font-weight: 900;*/
-  margin-left: 0;
-  cursor: pointer;
-}
-nav ul li label span{
-  display: None;
-  visibility: hidden;
-}
-nav ul li label.abrir {
-    /*align:right;*/
-    cursor: copy;
-}
-nav ul {
-    display: flex;
-    flex-direction: column;
-}
-nav ul li.last {
-    order: 2;
-}
-nav ul li .fa-search{
-  color: red;
-  margin-left: -.5em;
-}
-nav ul li .textoimpressao img{
-  height: 2em;
-}
-
-/*=================*/
-.fas, .fab{
-  font-size: 1.3em;
-}
-.fa-level-down-alt, .fa-level-up-alt{
-  font-size: 1em;
-}
 /*======================================================================================*/
 p.redacaodada,
 #textoimpressao p,
-#textoimpressao li,
 #textoimpressao h4,
 #textoimpressao h5,
 #textoimpressao h6,
@@ -141,7 +30,6 @@ p.redacaodada,
     text-decoration: line-through;
     /*color: #777;*/
 }
-#textoimpressao:target li,
 #textoimpressao:target h4,
 #textoimpressao:target h5,
 #textoimpressao:target h6,
@@ -171,30 +59,27 @@ nav ul {
  /*padding: 0 0 0 0;*/
  /*text-indent: 2em;*/
 }
-nav li{
- list-style-type: none;
-  margin-left: 0;
+li{
   margin-bottom:.4em;
 }
 /*======================================================================================*/
 #view .redacaodada,
 #view .hide-action,
 #view:target .show-action,
-#textoimpressao:target .esconder,
 #textoimpressao .textoimpressao{
   display: block;
 }
 #void del,
-#void strike,
 #view del,
+#void strike,
 #view strike {
   /*color:#aaa;*/
 }
 #void nav,
 #view .show-action,
 #view .textoimpressao,
-#view:target strike,
 #view:target del,
+#view:target strike,
 #view:target .redacaodada,
 #view:target .hide-action,
 #textoimpressao .show-action,
@@ -203,190 +88,94 @@ nav li{
 #textoimpressao:target .textoimpressao{
     display: none;
 }
-
 /*
 conforme a HASH atual:
 Oculta os elementos com a classe .hide-action
 */
-h1{font-size:16pt;}
-h2{font-size:14pt;}
-h3{font-size:12pt;}
-
-h1, h2, h3, h4, h5 {text-align:center; margin:0;}
-h4, h6 {
-    padding-top: .4em;
-    padding-bottom: .1em;
-}
-h5{
-    font-weight: normal;
-    padding-top: -.2em;
-    padding-bottom: .1em;
-}
-h4.letra_espaco,
-h5.letra_espaco{
-    letter-spacing: .15em;
-    font-weight: 600;
-}
-h4.caixa_alta,
-h5.caixa_alta,
-h6.caixa_alta,
-p.caixa_alta,
-span.caixa_alta {
-    text-transform: uppercase;
-}
-h4 {/*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size: 10pt; }
-h5 {/*Tamanho da fonte*/ font-size:10pt; }
-h6 {text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em;}
-
+h1{font-size:16pt !important;}
+h2{font-size:14pt !important;}
+h3{font-size:12pt !important;}
+h1, h2, h3, h4, h5 {text-align:center; margin:0 !important;}
+h4 {/*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size: 10pt !important;}
+h5 {font-weight: bold; /*Tamanho da fonte*/ font-size:10pt !important; }
+h6 {text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em; !important}
 p{
     /* Tamanho e família de fontes */
     /*font: 20px Arial, Helvetica, sans-serif;*/
-    font-size: 10pt;
-    padding:0;
-    text-indent: 2em;
-    text-align:justify;
+    font-size: 10pt !important;
+    padding:0 !important;
+    text-indent: 2em !important;
+    text-align:justify !important;
 }
 p.epigrafe {
   /*font-size: 3vmin;*/
-  color: #000080;
-  margin:1em 0 0 0;
-  padding:0;
-  font-weight: bold; /*Negrito*/
-  text-align:center;
-  text-indent: 0;
-  text-transform: uppercase;
+  color: #000080 !important;
+  margin:1em 0 0 0 !important;
+  padding:0 !important;
+  font-weight: bold !important; /*Negrito*/
+  text-align:center !important;
+  text-indent: 0 !important;
+  text-transform: uppercase !important;
 }
 p.epigrafe a{
-  color: #000080;
-  font-weight: bold; /*Negrito*/
-  text-decoration: underline; /*Sem sublinhado*/
+  color: #000080 !important;
+  font-weight: bold !important; /*Negrito*/
+  text-decoration: underline !important; /*Sem sublinhado*/
 }
 p.ementa{
   /*font-size: 3vmin;*/
-  float: right;
-  width: 50%;
-  display: block;
-  color: #800000;
-  margin-top: 2em;
-  margin-bottom:0;
+  float: right !important;
+  width: 50% !important;
+  display: block !important;
+  color: #800000 !important;
+  margin-top: 2em !important;
+  margin-bottom:0 !important;
   /*padding: 3em;*/
   /*padding-top:3em;*/ /* Espaçamento do texto em baixo */
-  padding-bottom:.3em; /* Espaçamento do texto em baixo */
-  padding-left:50%; /* Espaçamento do texto em baixo */
-  padding-right:0em; /* Espaçamento do texto em baixo */
-  text-align:justify;
-  text-indent: 0;
+  padding-bottom:.3em !important; /* Espaçamento do texto em baixo */
+  padding-left:50% !important; /* Espaçamento do texto em baixo */
+  padding-right:0em !important; /* Espaçamento do texto em baixo */
+  text-align:justify !important;
+  text-indent: 0 !important;
   }
-
-.dou {color: red;}
-.dou center{text-align: center; color: red;}
-.dou a{color: red;}
-/* p.dou {font-weight: bold; color:#F00;} */
-p.presidente, p.ministro, p.dou{
+p.data, p.presidente, p.ministro, p.dou{
   /*
   text-align:right;
   */
-  padding:0;
-  text-indent: 0;
+  padding:0 !important;
+  text-indent: 0 !important;
 }
 p.data{}
 p.presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
-p.ministro{display: block;font-style:italic;margin:0;}
+p.ministro{display: block!important; font-style:italic;margin:0!important;}
+p.dou {font-weight: bold;color:#F00 !important;}
 blockquote.textoalterado{
-    padding-right: 0;
-    padding-left: 2em;
-    margin-right: 1em;
-    text-align: justify;
+    padding-right: 0 !important;
+    padding-left: 2em !important;
+    margin-right: 1em !important;
+    text-align: justify !important;
     /*font-style: italic;*/
     /*color: red;*/
 }
-/*== Formatação Itens Revogados  ==*/
-/*=========================*/
-#view .elementorevogado,
-#textoimpressao .elementorevogado,
-#textoimpressao table.elementorevogado,
-#textoimpressao:target table.elementorevogado,
-#textoimpressao table.elementorevogado caption,
-#textoimpressao:target table.elementorevogado caption,
-#view table.elementorevogado,
-#view table.elementorevogado caption{
-    text-decoration: line-through;
-}
-#view:target object.elementorevogado,
-#view:target img.elementorevogado,
-#view:target table.elementorevogado,
-#view:target table.elementorevogado caption{
-    display: None
-}
-
-/*== Formatação Tabelas  ==*/
-/*=========================*/
-table.tabelarevogada, table.tabelarevogada caption{
-    text-decoration: line-through;
-}
-#view table.tabelarevogada,
-#view table.tabelarevogada caption{
-    text-decoration: line-through;
-}
-#textoimpressao table,
-#textoimpressao table caption,
-#textoimpressao table.tabelarevogada,
-#textoimpressao:target table.tabelarevogada,
-#textoimpressao table.tabelarevogada caption,
-#textoimpressao:target table.tabelarevogada caption{
-    text-decoration: line-through;
-}
-
-#view:target table.tabelarevogada,
-#view:target table.tabelarevogada caption{
-    display: None
-}
-
-#textoimpressao:target table,
-#textoimpressao:target table caption{
-    text-decoration: none;
-}
 table{
-    width: 85%;
-    border-collapse: collapse;
-    margin-top: 1.8em;
-    margin-left: auto;
-    margin-right: auto;
+    width: 95% !important;
+    border-collapse: collapse !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+th {
+    height: 200% !important;
+    text-align: left !important;
 }
 table, th, td {
-    border: 1px solid black;
-    padding-left: 1em;
+    border: 1px solid black !important;
 }
-table caption {
-    text-align: center;
-    caption-side: bottom;
-}
-
-caption.top_titulo, caption.top_titulo h4{
-  caption-side: top;
-  text-align: center;
-  color:#800000;
-  font-size:1.3em;
-  font-weight:900;
-
-}
-table thead tr th h4{
-  color: #800000;
-  font-weight:900;
-}
-thead, th {
-    background-color: #d0d0d0;
-    border-bottom: 1px double black !important;
-    height: 2.2em;
-    line-height: 2.2em;
-    text-align: left;
-}
-td, tr {
-    height: 1.4em;
-    line-height: 1.4em;
+tr{
+    height: .8em !important;
+    line-height: .8em !important;
 }
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2
 }
 
 @media print{
@@ -407,7 +196,7 @@ tr:nth-child(even) {
   }
   header::before{
     content: "";
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasao.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
     background-size: 80px 80px;
     background-position:center;
     background-repeat:no-repeat;
@@ -467,10 +256,10 @@ tr:nth-child(even) {
   #view:target .redacaodada,
   #void .redacaodada,
   #textoimpressao .textoimpressao,
-  #view strike,
   #view del,
-  #view:target strike,
+  #view strike,
   #view:target del,
+  #view:target strike,
   #view:target .hide-action {
     display: none;
   }
@@ -489,13 +278,6 @@ tr:nth-child(even) {
   }
 }
 
-@media screen and (min-width: 870px){
-  /* margem para up/down
-  [for=something] { margin-left: 11em; }
-  */
-}
-
-
 @media screen and (max-width: 1099px){
   header{
     width:100%; /* Largura total - Se você omitir ocupará toda a linha */
@@ -511,7 +293,7 @@ tr:nth-child(even) {
   header::before{
     content: "";
     /*background-image:url(https://image.freepik.com/vetores-gratis/tux-personagem-com-papel-em-branco-para-o-seu-texto_52478.jpg);*/
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasao.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
     background-size: 100% 100%;
     display: inline-block;
     /*size of your image*/
@@ -533,18 +315,13 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 1100px){
-
-  /* margem para up/down
-  [for=something] { margin-left: 20em; }
-  */
-
   /**/
   header{
   /* Largura total - Se você omitir ocupará toda a linha */
   /*width:100%;*/
   height: 110px;
   color: #808000; /* Cor da fonte */
-  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/brasao.png") 10em 1.5em no-repeat;
+  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png") 10em 1.5em no-repeat;
   background-size: 82px 82px;
   padding-top: 0em;
   display: block;
