@@ -1,5 +1,5 @@
 /*
-legis_3_1567432849
+legis_3_1567434168
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -30,9 +30,13 @@ a:link, a:visited, a:hover{
 .bold{
     font-weight: 900;
 }
-span.adi,
-i.adi,
 b.adi,
+dfn,
+del.adi,
+i.adi,
+s.adi,
+strike.adi,
+span.adi,
 u.adi {
     text-decoration: line-through;
     font-weight: normal;
