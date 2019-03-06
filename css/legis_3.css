@@ -1,5 +1,5 @@
 /*
-legis_3_1567643116
+legis_3_1567782275
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -43,6 +43,9 @@ span.adi,
 u.adi {
     text-decoration: line-through;
     font-weight: normal;
+}
+del.adi, strike.adi {
+    display: block;
 }
 
 /* Caixa de Alerta */
