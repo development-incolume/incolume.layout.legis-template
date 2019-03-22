@@ -1,5 +1,5 @@
 /*
-legis_3_1566487920
+legis_3_1566489384
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -67,11 +67,7 @@ blockquote.alert p a{
 #something,
 nav ul li, inputr,
 nav ul input:checked ~li label.abrir {
-  display:none;
-}
-
-nav ul li{
-  text-decoration: none !important;
+    display:none;
 }
 
 nav ul input:checked ~li,
