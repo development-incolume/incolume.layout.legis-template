@@ -1,5 +1,5 @@
 /*
-legis_3_1566397348
+legis_3_1566487920
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -67,7 +67,11 @@ blockquote.alert p a{
 #something,
 nav ul li, inputr,
 nav ul input:checked ~li label.abrir {
-    display:none;
+  display:none;
+}
+
+nav ul li{
+  text-decoration: none !important;
 }
 
 nav ul input:checked ~li,
@@ -114,6 +118,7 @@ nav ul li .textoimpressao img{
 /*======================================================================================*/
 p.redacaodada,
 #textoimpressao p,
+#textoimpressao li,
 #textoimpressao h4,
 #textoimpressao h5,
 #textoimpressao h6,
@@ -122,6 +127,7 @@ p.redacaodada,
     text-decoration: line-through;
     /*color: #777;*/
 }
+#textoimpressao:target li,
 #textoimpressao:target h4,
 #textoimpressao:target h5,
 #textoimpressao:target h6,
