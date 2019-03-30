@@ -1,5 +1,5 @@
 /*
-legis_3e
+legis_3f
 http://www.planalto.gov.br/Brastra.gif
 http://www.planalto.gov.br/ccivil_03/Brastra.gif
 */
@@ -162,14 +162,35 @@ p.dou {font-weight: bold;color:#F00;}
 
 
 blockquote.textoalterado{
-    padding-right:0;
-    padding-left:2em;
-    margin-right:1em;
-    text-align:justify;
-    font-style: italic;
-    color: red;
+    padding-right: 0;
+    padding-left: 2em;
+    margin-right: 1em;
+    text-align: justify;
+    /*font-style: italic;*/
+    /*color: red;*/
+}
+table{
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+th {
+    height: 200%;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+tr{
+    height: 1em;
+    line-height: 1em;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
 @media print{
   *{
