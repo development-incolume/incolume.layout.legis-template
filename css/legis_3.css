@@ -1,12 +1,13 @@
 /*
-legis_3c
+legis_3d
 http://www.planalto.gov.br/Brastra.gif
 http://www.planalto.gov.br/ccivil_03/Brastra.gif
 */
 *{
-  /* Tamanho e família de fontes */
-  font: normal 10pt Arial, Helvetica, sans-serif;
-  /*font-family: arial;*/
+  /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
+  /*font: normal 10pt Arial, Helvetica, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
 }
 body{
     margin-bottom: 5em;
@@ -29,11 +30,16 @@ a:link, a:visited, a:hover{
 #textoimpressao p.epigrafe{
     text-decoration: none;
 }
-#textoimpressao .revogado,
+/*#textoimpressao .revogado,*/
 #textoimpressao .show-action,
 #textoimpressao .hide-action {
     display: none;
 }
+
+#textoimpressao:target .revogado{
+    text-decoration: line-through;
+}
+
 #textoimpressao:target h4,
 #textoimpressao:target h5,
 #textoimpressao:target h6,
@@ -64,7 +70,7 @@ nav ul {
  /*text-indent: 2em;*/
 }
 li{
-margin-bottom:.4em;
+  margin-bottom:.4em;
 }
 /*======================================================================================*/
 #view .revogado,
@@ -94,8 +100,8 @@ Oculta os elementos com a classe .hide-action
   display: block;
 }
 h1, h2, h3{text-align:center; margin:0;}
-h4, h5{text-align:center; font-weight: normal;/*Sem Negrito*/ font-size:10pt; /*Tamanho da fonte*/}
-h6{text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em;}
+h4, h5{text-align:center; /*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size:10pt; }
+h6{text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em;}
 
 p{
     /* Tamanho e família de fontes */
@@ -157,10 +163,14 @@ blockquote.textoalterado{
 
 
 @media print{
-  /*p, li{color #000; font:normal 10pt Arial, Helvetica, sans-serif;}*/
-  /*a:after {content: " (" attr(href) ")";}*/
-  a:link, a:visited { color: #000; font-weight: normal;text-decoration: underline;}
-
+  *{
+    /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
+    /*font: normal 10pt Arial, Helvetica, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color #000;
+    text-decoration: none;
+  }
   header{
     padding-top: 0em;
     display: block;
@@ -178,54 +188,72 @@ blockquote.textoalterado{
     color-adjust: exact;
     display: inline-block;
     /*size of your image*/
-    height: 100px;
-    width:100px;
+    height: 80px;
+    width:80px;
     /*if you want to change the position you can use margins or:*/
     /*position:relative;*/
-    /*filter: grayscale(100%)*//*preto e branco*/
+    /*preto e branco*/
+    /*filter: grayscale(100%)*/
+  }
+
+
+  /*apresentar o link na impressao*/
+  /*a:after {content: " (" attr(href) ")";}*/
+  /*a:after {content: " [ link ]";}*/
+  a:link, a:visited, a:active {
+    color: #000080;
+    font-weight: normal;
+    text-decoration: underline;
+    /*sublinhado duplo*/
+    /*text-decoration-style: double;*/
+    /*sublinhado onda*/
+    /*text-decoration-style:wavy;*/
+    /*sublinhado linha*/
+    /*text-decoration-style:solid;*/
+    text-decoration-color:#000;
+    }
+
+  header h1, h1 {font-size:16pt; font-weight:normal;}
+  header h2, h2 {font-size:14pt; font-weight:normal;}
+  header h3, h3 {font-size:12pt; font-weight:normal;}
+  h6{text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 0;}
+
+  p.epigrafe{
+    margin-top: 2em;
+  }
+  p.epigrafe a{
+    color: #000;
+    text-decoration:none;
+    text-weight: bold;
+  }
+  p.dou{color:#000; text-align:center;}
+  p.ementa{
+    padding-top: 1.5pt;
+    padding-bottom:1.5pt;
+    color:#000;
+    text-decoration: none;
   }
 
   #view .revogado,
   #view .show-action,
   #view .hide-action,
   #view:target .revogado,
+  #void .revogado,
   #textoimpressao .textoimpressao,
   #view:target .hide-action {
     display: none;
   }
+
   #textoimpressao h4,
   #textoimpressao h5,
   #textoimpressao h6,
   #textoimpressao .ementa,
-  #textoimpressao p,
-  #view .epigrafe {
-      /*text-decoration: overline;*/
-      text-decoration: none;
-  }
-  #textoimpressao h1{font-size:16;}
-  #textoimpressao h2{font-size:14;}
-  #textoimpressao h3{font-size:12;}
-
-  h1{font-size:16;}
-  h2{font-size:14;}
-  h3{font-size:12;}
-  h4, h5, h6{font-size:10;}
-  h1,h2, h3{margin:0;}
-
-  h1, h2, h3, h4, h5, p,
-  #textoimpressao .epigrafe,
-  #view .epigrafe {
-    color:#000;
+  #textoimpressao p{
+    text-decoration: none;
   }
 
-  p.dou{color:#000; text-align:center; }
-  p.epigrafe{
-    padding-top:0em;
-  }
-  p.ementa{
-    padding-top: 1.5pt;	
-    padding-bottom:1.5pt;
-    color:#000;
+  #textoimpressao .revogado{
+    text-decoration: line-through;
   }
 }
 
