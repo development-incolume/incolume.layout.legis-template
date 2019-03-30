@@ -1,5 +1,5 @@
 /*
-legis_3m1
+legis_3m2
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -18,7 +18,9 @@ a:link, a:visited, a:hover{
   font-family: arial;
 }
 .escoder{display: None; visibility}
-
+.bold{
+    font-weight: 900;
+}
 span.adi,
 i.adi,
 b.adi,
@@ -53,6 +55,7 @@ blockquote.alert p a{
 
 /*   Nav retratil  */
 /*=================*/
+#something,
 nav ul li, inputr,
 nav ul input:checked ~li label.abrir {
     display:none;
@@ -151,10 +154,31 @@ Oculta os elementos com a classe .hide-action
 h1{font-size:16pt;}
 h2{font-size:14pt;}
 h3{font-size:12pt;}
+
 h1, h2, h3, h4, h5 {text-align:center; margin:0;}
+h4, h6 {
+    padding-top: .4em;
+    padding-bottom: .1em;
+}
+h5{
+    font-weight: normal;
+    padding-top: -.2em;
+    padding-bottom: .1em;
+}
+h4.letra_espaco,
+h5.letra_espaco{
+    letter-spacing: .15em;
+    font-weight: 600;
+}
+h4.caixa_alta,
+h5.caixa_alta,
+h6.caixa_alta {
+    text-transform: uppercase;
+}
 h4 {/*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size: 10pt; }
-h5 {/*font-weight: bold;*/ text-transform: uppercase; /*Tamanho da fonte*/ font-size:10pt; }
+h5 {/*Tamanho da fonte*/ font-size:10pt; }
 h6 {text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em;}
+
 p{
     /* Tamanho e família de fontes */
     /*font: 20px Arial, Helvetica, sans-serif;*/
