@@ -1,5 +1,5 @@
 /*
-legis_3m
+legis_3m1
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -18,6 +18,14 @@ a:link, a:visited, a:hover{
   font-family: arial;
 }
 .escoder{display: None; visibility}
+
+span.adi,
+i.adi,
+b.adi,
+u.adi {
+    text-decoration: line-through;
+    font-weight: normal;
+}
 
 /* Caixa de Alerta */
 /*=================*/
@@ -42,24 +50,19 @@ blockquote.alert p a{
     font-size: 1em;
     text-align: center;
 }
-/*=================*/
 
 /*   Nav retratil  */
 /*=================*/
-nav ul li, input {
+nav ul li, inputr,
+nav ul input:checked ~li label.abrir {
     display:none;
 }
 
+nav ul input:checked ~li,
 nav ul li.fixo, li.abrir {
     display: block;
 }
 
-nav ul input:checked ~li {
-    display: block;
-}
-nav ul input:checked ~li label.abrir {
-    display: none;
-}
 nav ul li label {
     color: red;
     font-weight: 900;
@@ -211,22 +214,56 @@ blockquote.textoalterado{
     /*font-style: italic;*/
     /*color: red;*/
 }
+/*== Formatação Tabelas  ==*/
+/*=========================*/
+table.tabelarevogada, table.tabelarevogada caption{
+    text-decoration: line-through;
+}
+#view table.tabelarevogada,
+#view table.tabelarevogada caption{
+    text-decoration: line-through;
+}
+#textoimpressao table,
+#textoimpressao table caption,
+#textoimpressao table.tabelarevogada,
+#textoimpressao:target table.tabelarevogada,
+#textoimpressao table.tabelarevogada caption,
+#textoimpressao:target table.tabelarevogada caption{
+    text-decoration: line-through;
+}
+
+#view:target table.tabelarevogada,
+#view:target table.tabelarevogada caption{
+    display: None
+}
+
+#textoimpressao:target table,
+#textoimpressao:target table caption{
+    text-decoration: none;
+}
 table{
     width: 85%;
     border-collapse: collapse;
+    margin-top: 1.8em;
     margin-left: auto;
     margin-right: auto;
 }
-th {
+table, th, td {
+    border: 1px solid black;
+    padding-left: 1em;
+}
+table caption {
+    text-align: center;
+    caption-side: bottom;
+}
+thead, th {
+    background-color: #d0d0d0;
+    border-bottom: 1px double black !important;
     height: 2.2em;
     line-height: 2.2em;
     text-align: left;
-    background-color: #F5F5F5;
 }
-table, th, td {
-    border: 1px solid black;
-}
-td, tr{
+td, tr {
     height: 1.4em;
     line-height: 1.4em;
 }
