@@ -1,7 +1,8 @@
 /*
-legis_3f
-http://www.planalto.gov.br/Brastra.gif
-http://www.planalto.gov.br/ccivil_03/Brastra.gif
+legis_3g
+disponivel em:
+http://www.planalto.gov.br/ccivil_03/css/legis_3.css
+https://www.planalto.gov.br/ccivil_03/css/legis_3.css
 */
 *{
   /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
@@ -16,47 +17,27 @@ a:link, a:visited, a:hover{
   color: #000080;
   font-family: arial;
 }
-p.revogado{text-decoration: line-through;}
 .escoder{display: None; visibility}
 
 /*======================================================================================*/
+p.redacaodada,
 #textoimpressao p,
 #textoimpressao h4,
 #textoimpressao h5,
 #textoimpressao h6,
-#textoimpressao .ementa {
+#textoimpressao .ementa,
+#textoimpressao:target .redacaodada{
     text-decoration: line-through;
+    /*color: #777;*/
 }
-#textoimpressao p.epigrafe{
-    text-decoration: none;
-}
-/*#textoimpressao .revogado,*/
-#textoimpressao .show-action,
-#textoimpressao .hide-action {
-    display: none;
-}
-
-#textoimpressao:target .revogado{
-    text-decoration: line-through;
-}
-
 #textoimpressao:target h4,
 #textoimpressao:target h5,
 #textoimpressao:target h6,
 #textoimpressao:target .ementa,
-#textoimpressao:target p {
+#textoimpressao:target p,
+#textoimpressao p.epigrafe{
     /*text-decoration: overline;*/
     text-decoration: none;
-}
-#textoimpressao .textoimpressao{
-    display: block;
-}
-#view .textoimpressao,
-#textoimpressao:target .textoimpressao{
-    display:none;
-}
-#void nav {
-    display:none;
 }
 #void .ementa{
     margin-bottom: 1em;
@@ -82,36 +63,35 @@ li{
   margin-bottom:.4em;
 }
 /*======================================================================================*/
-#view .revogado,
-#view .hide-action {
+#view .redacaodada,
+#view .hide-action,
+#view:target .show-action,
+#textoimpressao .textoimpressao{
   display: block;
 }
-
-/*
-conforme a HASH atual:
-Mostra os elementos com a classe .revogado
-Mostra os elementos com a classe .hide-action
-*/
-#view .show-action,
-#view .textoimpressao{
-    display: none;
+#void strike,
+#view strike {
+  /*color:#aaa;*/
 }
-
-#view:target .revogado,
-#view:target .hide-action {
-  display: none;
+#void nav,
+#view .show-action,
+#view .textoimpressao,
+#view:target strike,
+#view:target .redacaodada,
+#view:target .hide-action,
+#textoimpressao .show-action,
+#textoimpressao .hide-action,
+/*#textoimpressao:target strike,*/
+#textoimpressao:target .textoimpressao{
+    display: none;
 }
 /*
 conforme a HASH atual:
 Oculta os elementos com a classe .hide-action
 */
-#view:target .show-action {
-  display: block;
-}
-h1, h2, h3{text-align:center; margin:0;}
-h4, h5{text-align:center; /*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size:10pt; }
-h6{text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em;}
-
+h1, h2, h3 {text-align:center; margin:0;}
+h4, h5 {text-align:center; /*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size:10pt; }
+h6 {text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em;}
 p{
     /* Tamanho e família de fontes */
     /*font: 20px Arial, Helvetica, sans-serif;*/
@@ -159,8 +139,6 @@ p.data{}
 p.presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
 p.ministro{display: block;font-style:italic;margin:0;}
 p.dou {font-weight: bold;color:#F00;}
-
-
 blockquote.textoalterado{
     padding-right: 0;
     padding-left: 2em;
@@ -175,18 +153,16 @@ table{
     margin-left: auto;
     margin-right: auto;
 }
-
 th {
     height: 200%;
     text-align: left;
 }
-
 table, th, td {
     border: 1px solid black;
 }
 tr{
-    height: 1em;
-    line-height: 1em;
+    height: .8em;
+    line-height: .8em;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -210,7 +186,7 @@ tr:nth-child(even) {
   }
   header::before{
     content: "";
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/Brastra.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
     background-size: 80px 80px;
     background-position:center;
     background-repeat:no-repeat;
@@ -264,12 +240,14 @@ tr:nth-child(even) {
     text-decoration: none;
   }
 
-  #view .revogado,
+  #view .redacaodada,
   #view .show-action,
   #view .hide-action,
-  #view:target .revogado,
-  #void .revogado,
+  #view:target .redacaodada,
+  #void .redacaodada,
   #textoimpressao .textoimpressao,
+  #view strike,
+  #view:target strike,
   #view:target .hide-action {
     display: none;
   }
@@ -281,8 +259,8 @@ tr:nth-child(even) {
   #textoimpressao p{
     text-decoration: none;
   }
-
-  #textoimpressao .revogado{
+  #textoimpressao strike,
+  #textoimpressao .redacaodada{
     text-decoration: line-through;
   }
 }
@@ -302,7 +280,7 @@ tr:nth-child(even) {
   header::before{
     content: "";
     /*background-image:url(https://image.freepik.com/vetores-gratis/tux-personagem-com-papel-em-branco-para-o-seu-texto_52478.jpg);*/
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/Brastra.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
     background-size: 100% 100%;
     display: inline-block;
     /*size of your image*/
@@ -317,7 +295,7 @@ tr:nth-child(even) {
   h1{font-size:16pt;}
   h2{font-size:14pt;}
   h3{font-size:12pt;}
-  h4, h5{font-size:10;}
+  h4, h5{font-size:10pt;}
   h6{text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em;}
 }
 
@@ -328,7 +306,7 @@ tr:nth-child(even) {
   /*width:100%;*/
   height: 110px;
   color: #808000; /* Cor da fonte */
-  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/Brastra.png") 10em 1.5em no-repeat;
+  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png") 10em 1.5em no-repeat;
   background-size: 82px 82px;
   padding-top: 0em;
   display: block;
@@ -358,6 +336,6 @@ header h2, header h3 {
   h1{font-size:16pt;}
   h2{font-size:14pt;}
   h3{font-size:12pt;}
-  h4, h5{font-size:10;}
+  h4, h5{font-size:10pt;}
   h6{text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em;}
 }
