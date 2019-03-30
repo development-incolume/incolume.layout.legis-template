@@ -1,5 +1,5 @@
 /*
-legis_3h
+legis_3h1
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -94,7 +94,7 @@ h2{font-size:14pt;}
 h3{font-size:12pt;}
 h1, h2, h3, h4, h5 {text-align:center; margin:0;}
 h4 {/*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size: 10pt; }
-h5 {font-weight: bold; /*Tamanho da fonte*/ font-size:10pt; }
+h5 {/*font-weight: bold;*/ text-transform: uppercase; /*Tamanho da fonte*/ font-size:10pt; }
 h6 {text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em;}
 p{
     /* Tamanho e família de fontes */
