@@ -1,5 +1,5 @@
 /*
-legis_3m8
+legis_3m9
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -86,6 +86,14 @@ nav ul {
 nav ul li.last {
     order: 2;
 }
+nav ul li .fa-search{
+  color: red;
+  margin-left: -.5em;
+}
+nav ul li .textoimpressao img{
+  height: 2em;
+}
+
 /*=================*/
 .fas, .fab{
   font-size: 1.3em;
