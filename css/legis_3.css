@@ -1,5 +1,5 @@
 /*
-legis_3j
+legis_3k
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -69,7 +69,9 @@ li{
 #textoimpressao .textoimpressao{
   display: block;
 }
+#void del,
 #void strike,
+#view del,
 #view strike {
   /*color:#aaa;*/
 }
@@ -77,6 +79,7 @@ li{
 #view .show-action,
 #view .textoimpressao,
 #view:target strike,
+#view:target del,
 #view:target .redacaodada,
 #view:target .hide-action,
 #textoimpressao .show-action,
@@ -257,7 +260,9 @@ tr:nth-child(even) {
   #void .redacaodada,
   #textoimpressao .textoimpressao,
   #view strike,
+  #view del,
   #view:target strike,
+  #view:target del,
   #view:target .hide-action {
     display: none;
   }
@@ -269,6 +274,7 @@ tr:nth-child(even) {
   #textoimpressao p{
     text-decoration: none;
   }
+  #textoimpressao del,
   #textoimpressao strike,
   #textoimpressao .redacaodada{
     text-decoration: line-through;
