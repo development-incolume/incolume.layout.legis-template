@@ -1,14 +1,16 @@
 /*
-legis_3a
+legis_3c
 http://www.planalto.gov.br/Brastra.gif
 http://www.planalto.gov.br/ccivil_03/Brastra.gif
 */
 *{
   /* Tamanho e família de fontes */
-  /*font: normal 10pt Arial, Helvetica, sans-serif;*/
-  font-family: arial;
+  font: normal 10pt Arial, Helvetica, sans-serif;
+  /*font-family: arial;*/
 }
-
+body{
+    margin-bottom: 5em;
+}
 a:link, a:visited, a:hover{
   color: #000080;
   font-family: arial;
@@ -24,24 +26,42 @@ a:link, a:visited, a:hover{
 #textoimpressao .ementa {
     text-decoration: line-through;
 }
-#textoimpressao #view .revogado,
-#textoimpressao #view .show-action,
-#textoimpressao #view .hide-action {
+#textoimpressao p.epigrafe{
+    text-decoration: none;
+}
+#textoimpressao .revogado,
+#textoimpressao .show-action,
+#textoimpressao .hide-action {
     display: none;
 }
-#impress {
+#textoimpressao:target h4,
+#textoimpressao:target h5,
+#textoimpressao:target h6,
+#textoimpressao:target .ementa,
+#textoimpressao:target p {
+    /*text-decoration: overline;*/
     text-decoration: none;
 }
-#impress:target #textoimpressao h4,
-#impress:target #textoimpressao h5,
-#impress:target #textoimpressao h6,
-#impress:target #textoimpressao .ementa,
-#impress:target #textoimpressao p {
-    text-decoration: none;
+#textoimpressao .textoimpressao{
+    display: block;
 }
-ul {
+#view .textoimpressao,
+#textoimpressao:target .textoimpressao{
+    display:none;
+}
+#void nav {
+    display:none;
+}
+#void .ementa{
+    margin-bottom: 1em;
+}
+nav ul {
  list-style-type: none;
- margin-top: 2em;
+ /*margin-top: .5em;*/
+ /*margin-bottom: 1.5em;*/
+ margin: 0 0 2em 0;
+ /*padding: 0 0 0 0;*/
+ /*text-indent: 2em;*/
 }
 li{
 margin-bottom:.4em;
@@ -57,7 +77,10 @@ conforme a HASH atual:
 Mostra os elementos com a classe .revogado
 Mostra os elementos com a classe .hide-action
 */
-#view .show-action{display: none;}
+#view .show-action,
+#view .textoimpressao{
+    display: none;
+}
 
 #view:target .revogado,
 #view:target .hide-action {
@@ -84,14 +107,15 @@ p{
 }
 p.epigrafe {
   /*font-size: 3vmin;*/
-  font-weight: bold; /*Negrito*/
-  color: #000080;
-  margin:0;
-  margin-top: 1em;
+  margin:1em 0 0 0;
   padding:0;
   text-align:center;
-  text-decoration: underline;
   text-indent: 0;
+}
+p.epigrafe a{
+  color: #000080;
+  font-weight: bold; /*Negrito*/
+  text-decoration: underline; /*Sem sublinhado*/
 }
 p.ementa{
   /*font-size: 3vmin;*/
@@ -99,9 +123,11 @@ p.ementa{
   width: 50%;
   display: block;
   color: #800000;
+  margin-top: 2em;
+  margin-bottom:0;
   /*padding: 3em;*/
   /*padding-top:3em;*/ /* Espaçamento do texto em baixo */
-  padding-bottom:2em; /* Espaçamento do texto em baixo */
+  padding-bottom:.3em; /* Espaçamento do texto em baixo */
   padding-left:50%; /* Espaçamento do texto em baixo */
   padding-right:0em; /* Espaçamento do texto em baixo */
   text-align:justify;
@@ -131,19 +157,20 @@ blockquote.textoalterado{
 
 
 @media print{
-  a:after {content: " (" attr(href) ")";}
-  a:link, a:visited { color: #000; font-weight: bold;text-decoration: underline;}
+  /*p, li{color #000; font:normal 10pt Arial, Helvetica, sans-serif;}*/
+  /*a:after {content: " (" attr(href) ")";}*/
+  a:link, a:visited { color: #000; font-weight: normal;text-decoration: underline;}
 
-header{
+  header{
     padding-top: 0em;
     display: block;
     margin:0;
     padding-bottom: 0;
     text-align:center;
   }
-header::before{
+  header::before{
     content: "";
-    background-image:url(http://www.planalto.gov.br/ccivil_03/Brastra.gif);
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/Brastra.png");
     background-size: 80px 80px;
     background-position:center;
     background-repeat:no-repeat;
@@ -152,10 +179,32 @@ header::before{
     display: inline-block;
     /*size of your image*/
     height: 100px;
-    /*width:100px;*/
+    width:100px;
     /*if you want to change the position you can use margins or:*/
     /*position:relative;*/
+    /*filter: grayscale(100%)*//*preto e branco*/
   }
+
+  #view .revogado,
+  #view .show-action,
+  #view .hide-action,
+  #view:target .revogado,
+  #textoimpressao .textoimpressao,
+  #view:target .hide-action {
+    display: none;
+  }
+  #textoimpressao h4,
+  #textoimpressao h5,
+  #textoimpressao h6,
+  #textoimpressao .ementa,
+  #textoimpressao p,
+  #view .epigrafe {
+      /*text-decoration: overline;*/
+      text-decoration: none;
+  }
+  #textoimpressao h1{font-size:16;}
+  #textoimpressao h2{font-size:14;}
+  #textoimpressao h3{font-size:12;}
 
   h1{font-size:16;}
   h2{font-size:14;}
@@ -163,7 +212,9 @@ header::before{
   h4, h5, h6{font-size:10;}
   h1,h2, h3{margin:0;}
 
-  h1, h2, h3, h4, h5{
+  h1, h2, h3, h4, h5, p,
+  #textoimpressao .epigrafe,
+  #view .epigrafe {
     color:#000;
   }
 
@@ -176,16 +227,6 @@ header::before{
     padding-bottom:1.5pt;
     color:#000;
   }
-
-
-  #view .revogado,
-  #view .show-action,
-  #view .hide-action,
-  #view:target .revogado,
-  #view:target .hide-action {
-    display: none;
-  }
-
 }
 
 @media screen and (max-width: 1099px){
@@ -203,7 +244,7 @@ header::before{
   header::before{
     content: "";
     /*background-image:url(https://image.freepik.com/vetores-gratis/tux-personagem-com-papel-em-branco-para-o-seu-texto_52478.jpg);*/
-    background-image:url(http://www.planalto.gov.br/ccivil_03/Brastra.gif);
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/Brastra.png");
     background-size: 100% 100%;
     display: inline-block;
     /*size of your image*/
@@ -229,7 +270,7 @@ header::before{
   /*width:100%;*/
   height: 110px;
   color: #808000; /* Cor da fonte */
-  background: #fff url("http://www.planalto.gov.br/ccivil_03/Brastra.gif") 10em 1.5em no-repeat;
+  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/Brastra.png") 10em 1.5em no-repeat;
   background-size: 82px 82px;
   padding-top: 0em;
   display: block;
