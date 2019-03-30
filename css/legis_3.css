@@ -1,5 +1,5 @@
 /*
-legis_3h1
+legis_3i
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -135,14 +135,15 @@ p.ementa{
   text-align:justify;
   text-indent: 0;
   }
-p.data, p.presidente, p.ministro, p.dou{
+p.presidente, p.ministro, p.dou{
   /*
   text-align:right;
   */
   padding:0;
   text-indent: 0;
 }
-p.data{}
+p.data{
+}
 p.presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
 p.ministro{display: block;font-style:italic;margin:0;}
 p.dou {/*font-weight: bold;*/color:#F00;}
