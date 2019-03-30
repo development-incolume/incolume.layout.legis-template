@@ -1,5 +1,5 @@
 /*
-legis_3m9
+legis_3n0
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -74,6 +74,10 @@ nav ul li label {
     font-weight: 900;
     margin-left: 145px;
     cursor: pointer;
+}
+nav ul li label span{
+  display: None;
+  visibility: hidden;
 }
 nav ul li label.abrir {
     align:right;
