@@ -1,5 +1,5 @@
 /*
-legis_3m3
+legis_3m4
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -17,7 +17,9 @@ a:link, a:visited, a:hover{
   color: #000080;
   font-family: arial;
 }
-.escoder{display: None; visibility}
+.esconder{
+  display: None;
+}
 .bold{
     font-weight: 900;
 }
@@ -132,6 +134,7 @@ li{
 #view .redacaodada,
 #view .hide-action,
 #view:target .show-action,
+#textoimpressao:target .esconder,
 #textoimpressao .textoimpressao{
   display: block;
 }
@@ -179,7 +182,9 @@ h5.letra_espaco{
 }
 h4.caixa_alta,
 h5.caixa_alta,
-h6.caixa_alta {
+h6.caixa_alta,
+p.caixa_alta,
+span.caixa_alta {
     text-transform: uppercase;
 }
 h4 {/*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size: 10pt; }
