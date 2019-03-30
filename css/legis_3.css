@@ -1,5 +1,5 @@
 /*
-legis_3m6
+legis_3m7
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -231,10 +231,9 @@ p.ementa{
   text-indent: 0;
   }
 
-.dou center{
-  text-align: center;
-  color: red;
-}
+.dou center{text-align: center; color: red;}
+.dou a{color: red;}
+/* p.dou {font-weight: bold; color:#F00;} */
 p.presidente, p.ministro, p.dou{
   /*
   text-align:right;
@@ -242,11 +241,9 @@ p.presidente, p.ministro, p.dou{
   padding:0;
   text-indent: 0;
 }
-p.data{
-}
+p.data{}
 p.presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
 p.ministro{display: block;font-style:italic;margin:0;}
-p.dou {/*font-weight: bold;*/color:#F00;}
 blockquote.textoalterado{
     padding-right: 0;
     padding-left: 2em;
