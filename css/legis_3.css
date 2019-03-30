@@ -1,5 +1,5 @@
 /*
-legis_3i
+legis_3j
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -156,21 +156,23 @@ blockquote.textoalterado{
     /*color: red;*/
 }
 table{
-    width: 95%;
+    width: 85%;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
 }
 th {
-    height: 200%;
+    height: 2.2em;
+    line-height: 2.2em;
     text-align: left;
+    background-color: #F5F5F5;
 }
 table, th, td {
     border: 1px solid black;
 }
-tr{
-    height: .8em;
-    line-height: .8em;
+td, tr{
+    height: 1.4em;
+    line-height: 1.4em;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
