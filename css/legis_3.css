@@ -1,5 +1,5 @@
 /*
-legis_3m7
+legis_3m8
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -11,7 +11,8 @@ https://www.planalto.gov.br/ccivil_03/css/legis_3.css
   font-size: 10pt;
 }
 body{
-    margin-bottom: 5em;
+  margin: 1.5em;
+  margin-bottom: 40em;
 }
 a:link, a:visited, a:hover{
   color: #000080;
@@ -69,9 +70,9 @@ nav ul li.fixo, li.abrir {
 }
 
 nav ul li label {
-    color: red;
+    color: #000080;
     font-weight: 900;
-    margin-left: 110px;
+    margin-left: 145px;
     cursor: pointer;
 }
 nav ul li label.abrir {
@@ -86,7 +87,9 @@ nav ul li.last {
     order: 2;
 }
 /*=================*/
-
+.fas, .fab{
+  font-size: 1.3em;
+}
 /*======================================================================================*/
 p.redacaodada,
 #textoimpressao p,
@@ -127,7 +130,9 @@ nav ul {
  /*padding: 0 0 0 0;*/
  /*text-indent: 2em;*/
 }
-li{
+nav li{
+ list-style-type: none;
+  margin-left: 0;
   margin-bottom:.4em;
 }
 /*======================================================================================*/
@@ -231,6 +236,7 @@ p.ementa{
   text-indent: 0;
   }
 
+.dou {color: red;}
 .dou center{text-align: center; color: red;}
 .dou a{color: red;}
 /* p.dou {font-weight: bold; color:#F00;} */
