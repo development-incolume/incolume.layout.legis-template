@@ -1,5 +1,5 @@
 /*
-legis_3l
+legis_3l1
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -20,23 +20,25 @@ a:link, a:visited, a:hover{
 .escoder{display: None; visibility}
 
 /* Caixa de Alerta */
-blockquote#alert{
+blockquote.alert{
     border: 2px solid red;
     margin-top: 3em;
     text-align: center;
 }
 
-blockquote#alert i{
+blockquote.alert i{
     color: rgb(232,209,0);
+    font-size: 4em;
 }
 
-blockquote#alert p{
-    font-size:2em;
+blockquote.alert p{
+    font-size: 2em;
 }
 
-blockquote#alert p{
-    font-size:1em;
+blockquote.alert p a{
+    font-size: 1em;
 }
+
 /*======================================================================================*/
 p.redacaodada,
 #textoimpressao p,
