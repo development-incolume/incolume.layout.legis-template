@@ -1,5 +1,5 @@
 /*
-legis_3l1
+legis_3l2
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -23,6 +23,7 @@ a:link, a:visited, a:hover{
 blockquote.alert{
     border: 2px solid red;
     margin-top: 3em;
+    padding: 2em;
     text-align: center;
 }
 
@@ -33,10 +34,12 @@ blockquote.alert i{
 
 blockquote.alert p{
     font-size: 2em;
+    text-align: center;
 }
 
 blockquote.alert p a{
     font-size: 1em;
+    text-align: center;
 }
 
 /*======================================================================================*/
