@@ -1,5 +1,5 @@
 /*
-legis_3d
+legis_3e
 http://www.planalto.gov.br/Brastra.gif
 http://www.planalto.gov.br/ccivil_03/Brastra.gif
 */
@@ -16,7 +16,7 @@ a:link, a:visited, a:hover{
   color: #000080;
   font-family: arial;
 }
-.revogado{text-decoration: line-through;}
+p.revogado{text-decoration: line-through;}
 .escoder{display: None; visibility}
 
 /*======================================================================================*/
@@ -61,6 +61,15 @@ a:link, a:visited, a:hover{
 #void .ementa{
     margin-bottom: 1em;
 }
+
+nav{
+  /*text-transform: capitalize;*/
+}
+
+nav li:first-letter{
+  text-transform: capitalize;
+}
+
 nav ul {
  list-style-type: none;
  /*margin-top: .5em;*/
@@ -139,7 +148,7 @@ p.ementa{
   text-align:justify;
   text-indent: 0;
   }
-.data, .presidente, .ministro, .dou{
+p.data, p.presidente, p.ministro, p.dou{
   /*
   text-align:right;
   */
