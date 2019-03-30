@@ -145,7 +145,7 @@ p.data, p.presidente, p.ministro, p.dou{
 p.data{}
 p.presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
 p.ministro{display: block;font-style:italic;margin:0;}
-p.dou {font-weight: bold;color:#F00;}
+p.dou {/*font-weight: bold;*/color:#F00;}
 blockquote.textoalterado{
     padding-right: 0;
     padding-left: 2em;
