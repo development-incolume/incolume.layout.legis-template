@@ -1,5 +1,5 @@
 /*
-legis_3m5
+legis_3m6
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -330,7 +330,7 @@ tr:nth-child(even) {
   }
   header::before{
     content: "";
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasao.png");
     background-size: 80px 80px;
     background-position:center;
     background-repeat:no-repeat;
@@ -427,7 +427,7 @@ tr:nth-child(even) {
   header::before{
     content: "";
     /*background-image:url(https://image.freepik.com/vetores-gratis/tux-personagem-com-papel-em-branco-para-o-seu-texto_52478.jpg);*/
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasao.png");
     background-size: 100% 100%;
     display: inline-block;
     /*size of your image*/
@@ -455,7 +455,7 @@ tr:nth-child(even) {
   /*width:100%;*/
   height: 110px;
   color: #808000; /* Cor da fonte */
-  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png") 10em 1.5em no-repeat;
+  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/brasao.png") 10em 1.5em no-repeat;
   background-size: 82px 82px;
   padding-top: 0em;
   display: block;
