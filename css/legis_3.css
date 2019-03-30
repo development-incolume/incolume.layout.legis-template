@@ -1,5 +1,5 @@
 /*
-legis_3m4
+legis_3m5
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -230,6 +230,11 @@ p.ementa{
   text-align:justify;
   text-indent: 0;
   }
+
+.dou center{
+  text-align: center;
+  color: red;
+}
 p.presidente, p.ministro, p.dou{
   /*
   text-align:right;
