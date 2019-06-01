@@ -1,5 +1,5 @@
 /*
-legis_3_1559320970
+legis_3_1559401775
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -112,6 +112,7 @@ p.redacaodada,
 #textoimpressao h5,
 #textoimpressao h6,
 #textoimpressao .ementa,
+#textoimpressao ._ementa,
 #textoimpressao:target .redacaodada{
     text-decoration: line-through;
     /*color: #777;*/
@@ -120,12 +121,15 @@ p.redacaodada,
 #textoimpressao:target h5,
 #textoimpressao:target h6,
 #textoimpressao:target .ementa,
+#textoimpressao:target ._ementa,
 #textoimpressao:target p,
-#textoimpressao p.epigrafe{
+#textoimpressao p.epigrafe,
+#textoimpressao p._epigrafe{
     /*text-decoration: overline;*/
     text-decoration: none;
 }
-#void .ementa{
+#void .ementa,
+#void ._ementa{
     margin-bottom: 1em;
 }
 
@@ -219,7 +223,8 @@ p{
     text-indent: 2em;
     text-align:justify;
 }
-p.epigrafe {
+p.epigrafe,
+p._epigrafe {
   /*font-size: 3vmin;*/
   color: #000080;
   margin:1em 0 0 0;
@@ -229,12 +234,14 @@ p.epigrafe {
   text-indent: 0;
   text-transform: uppercase;
 }
-p.epigrafe a{
+p.epigrafe a,
+p._epigrafe a{
   color: #000080;
   font-weight: bold; /*Negrito*/
   text-decoration: underline; /*Sem sublinhado*/
 }
-p.ementa{
+p.ementa,
+p._ementa{
   /*font-size: 3vmin;*/
   float: right;
   width: 50%;
@@ -251,20 +258,27 @@ p.ementa{
   text-indent: 0;
   }
 
-.dou {color: red;}
-.dou center{text-align: center; color: red;}
-.dou a{color: red;}
-/* p.dou {font-weight: bold; color:#F00;} */
-p.presidente, p.ministro, p.dou{
+.dou,
+._dou {color: red;}
+.dou center,
+._dou center{text-align: center; color: red;}
+.dou a,
+._dou a{color: red;}
+/* p._dou {font-weight: bold; color:#F00;} */
+p.presidente, p.ministro, p.dou,
+p._presidente, p._ministro, p._dou{
   /*
   text-align:right;
   */
   padding:0;
   text-indent: 0;
 }
-p.data{}
-p.presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
-p.ministro{display: block;font-style:italic;margin:0;}
+p.data,
+p._data{}
+p.presidente,
+p._presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
+p.ministro,
+p._ministro{display: block;font-style:italic;margin:0;}
 blockquote.textoalterado{
     padding-right: 0;
     padding-left: 2em;
@@ -386,16 +400,20 @@ tr:nth-child(even) {
   header h3, h3 {font-size:12pt; font-weight:normal;}
   h6{text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 0;}
 
-  p.epigrafe{
+  p.epigrafe,
+  p._epigrafe{
     margin-top: 2em;
   }
-  p.epigrafe a{
+  p.epigrafe a,
+  p._epigrafe a{
     color: #000;
     text-decoration:none;
     text-weight: bold;
   }
-  p.dou{color:#000; text-align:center;}
-  p.ementa{
+  p.dou,
+  p._dou{color:#000; text-align:center;}
+  p.ementa,
+  p._ementa{
     padding-top: 1.5pt;
     padding-bottom:1.5pt;
     color:#000;
@@ -420,6 +438,7 @@ tr:nth-child(even) {
   #textoimpressao h5,
   #textoimpressao h6,
   #textoimpressao .ementa,
+  #textoimpressao ._ementa,
   #textoimpressao p{
     text-decoration: none;
   }
@@ -454,7 +473,8 @@ tr:nth-child(even) {
     /*if you want to change the position you can use margins or:*/
     /*position:relative;*/
   }
-  p.epigrafe{
+  p.epigrafe,
+  p._epigrafe{
     padding-top: 0em;
   }
   /*
