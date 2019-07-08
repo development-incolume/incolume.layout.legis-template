@@ -1,5 +1,5 @@
 /*
-legis_3_1562355335
+legis_3_1562590229
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -314,6 +314,15 @@ table, th, td {
 table caption {
     text-align: center;
     caption-side: bottom;
+}
+
+caption.top_titulo, caption.top_titulo h4{
+  caption-side: top;
+  text-align: center;
+  color:#800000;
+  font-size:1.3em;
+  font-weight:900;
+
 }
 table thead tr th h4{
   color: #800000;
