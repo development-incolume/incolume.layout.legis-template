@@ -1,5 +1,5 @@
 /*
-legis_3n0
+legis_3_1583259273
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -8,8 +8,17 @@ https://www.planalto.gov.br/ccivil_03/css/legis_3.css
   /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
   /*font: normal 10pt Arial, Helvetica, sans-serif;*/
   font-family: Arial, Helvetica, sans-serif;
+  /*qua set  4 21:37:10 -03 2019*/
+  /* Nova sequencia de fontes manual redação 2018/*
+  /*font-family: Calibri, Carlito, Arial, sans-serif; */
   font-size: 10pt;
 }
+
+object{
+    width: 100%;
+    height: 50em;
+  }
+
 body{
   margin: 1.5em;
   margin-bottom: 40em;
@@ -24,12 +33,23 @@ a:link, a:visited, a:hover{
 .bold{
     font-weight: 900;
 }
+dfn,
 span.adi,
-i.adi,
-b.adi,
-u.adi {
-    text-decoration: line-through;
-    font-weight: normal;
+#void del.adi,
+#view del.adi,
+#view:target del.adi,
+#textoimpressao del.adi,
+del.adi,
+#void strike.adi,
+#view strike.adi,
+#view:target strike.adi,
+#textoimpressao strike.adi,
+strike.adi {
+  /*tratamento de ADI*/
+  text-indent: 0;
+  display: inline-block;
+  text-decoration: line-through;
+  font-weight: normal;
 }
 
 /* Caixa de Alerta */
@@ -61,7 +81,11 @@ blockquote.alert p a{
 #something,
 nav ul li, inputr,
 nav ul input:checked ~li label.abrir {
-    display:none;
+  display:none;
+}
+
+nav ul li{
+  text-decoration: none !important;
 }
 
 nav ul input:checked ~li,
@@ -70,10 +94,10 @@ nav ul li.fixo, li.abrir {
 }
 
 nav ul li label {
-    color: #000080;
-    font-weight: 900;
-    margin-left: 145px;
-    cursor: pointer;
+  color: #000080;
+  font-weight: 900;
+  margin-left: 0;
+  cursor: pointer;
 }
 nav ul li label span{
   display: None;
@@ -102,9 +126,13 @@ nav ul li .textoimpressao img{
 .fas, .fab{
   font-size: 1.3em;
 }
+.fa-level-down-alt, .fa-level-up-alt{
+  font-size: 1em;
+}
 /*======================================================================================*/
 p.redacaodada,
 #textoimpressao p,
+#textoimpressao li,
 #textoimpressao h4,
 #textoimpressao h5,
 #textoimpressao h6,
@@ -113,6 +141,7 @@ p.redacaodada,
     text-decoration: line-through;
     /*color: #777;*/
 }
+#textoimpressao:target li,
 #textoimpressao:target h4,
 #textoimpressao:target h5,
 #textoimpressao:target h6,
@@ -174,6 +203,7 @@ nav li{
 #textoimpressao:target .textoimpressao{
     display: none;
 }
+
 /*
 conforme a HASH atual:
 Oculta os elementos com a classe .hide-action
@@ -312,6 +342,19 @@ table caption {
     text-align: center;
     caption-side: bottom;
 }
+
+caption.top_titulo, caption.top_titulo h4{
+  caption-side: top;
+  text-align: center;
+  color:#800000;
+  font-size:1.3em;
+  font-weight:900;
+
+}
+table thead tr th h4{
+  color: #800000;
+  font-weight:900;
+}
 thead, th {
     background-color: #d0d0d0;
     border-bottom: 1px double black !important;
@@ -427,6 +470,11 @@ tr:nth-child(even) {
   }
 }
 
+@media screen and (min-width: 870px){
+  [for=something] { margin-left: 11em; }
+}
+
+
 @media screen and (max-width: 1099px){
   header{
     width:100%; /* Largura total - Se você omitir ocupará toda a linha */
@@ -464,6 +512,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 1100px){
+
+  [for=something] { margin-left: 20em; }
+
   /**/
   header{
   /* Largura total - Se você omitir ocupará toda a linha */
