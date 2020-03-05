@@ -1,5 +1,5 @@
 /*
-legis_3_1567782275
+legis_3_1580902133
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -465,6 +465,11 @@ tr:nth-child(even) {
   }
 }
 
+@media screen and (min-width: 870px){
+  [for=something] { margin-left: 11em; }
+}
+
+
 @media screen and (max-width: 1099px){
   header{
     width:100%; /* Largura total - Se você omitir ocupará toda a linha */
@@ -502,6 +507,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 1100px){
+
+  [for=something] { margin-left: 20em; }
+
   /**/
   header{
   /* Largura total - Se você omitir ocupará toda a linha */
