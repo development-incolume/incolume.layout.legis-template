@@ -1,15 +1,15 @@
 /*
-legis_3_1583259273
+legis_3_1604540258
 disponivel em:
-http://www.planalto.gov.br/ccivil_03/css/legis_3.css
-https://www.planalto.gov.br/ccivil_03/css/legis_3.css
+http://www.planalto.gov.br/CCIVIL_03/css/legis_3.css
+https://www.planalto.gov.br/CCIVIL_03/css/legis_3.css
 */
 *{
   /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
   /*font: normal 10pt Arial, Helvetica, sans-serif;*/
   font-family: Arial, Helvetica, sans-serif;
   /*qua set  4 21:37:10 -03 2019*/
-  /* Nova sequencia de fontes manual redação 2018/*
+  /* Nova sequencia de fontes manual redação 2018 e Dec 9191/*
   /*font-family: Calibri, Carlito, Arial, sans-serif; */
   font-size: 10pt;
 }
@@ -79,7 +79,7 @@ blockquote.alert p a{
 /*   Nav retratil  */
 /*=================*/
 #something,
-nav ul li, inputr,
+nav ul li, input,
 nav ul input:checked ~li label.abrir {
   display:none;
 }
@@ -95,7 +95,7 @@ nav ul li.fixo, li.abrir {
 
 nav ul li label {
   color: #000080;
-  font-weight: 900;
+  /*font-weight: 900;*/
   margin-left: 0;
   cursor: pointer;
 }
@@ -104,7 +104,7 @@ nav ul li label span{
   visibility: hidden;
 }
 nav ul li label.abrir {
-    align:right;
+    /*align:right;*/
     cursor: copy;
 }
 nav ul {
@@ -300,6 +300,25 @@ blockquote.textoalterado{
     /*font-style: italic;*/
     /*color: red;*/
 }
+/*== Formatação Itens Revogados  ==*/
+/*=========================*/
+#view .elementorevogado,
+#textoimpressao .elementorevogado,
+#textoimpressao table.elementorevogado,
+#textoimpressao:target table.elementorevogado,
+#textoimpressao table.elementorevogado caption,
+#textoimpressao:target table.elementorevogado caption,
+#view table.elementorevogado,
+#view table.elementorevogado caption{
+    text-decoration: line-through;
+}
+#view:target object.elementorevogado,
+#view:target img.elementorevogado,
+#view:target table.elementorevogado,
+#view:target table.elementorevogado caption{
+    display: None
+}
+
 /*== Formatação Tabelas  ==*/
 /*=========================*/
 table.tabelarevogada, table.tabelarevogada caption{
@@ -471,7 +490,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 870px){
+  /* margem para up/down
   [for=something] { margin-left: 11em; }
+  */
 }
 
 
@@ -513,7 +534,9 @@ tr:nth-child(even) {
 
 @media screen and (min-width: 1100px){
 
+  /* margem para up/down
   [for=something] { margin-left: 20em; }
+  */
 
   /**/
   header{
