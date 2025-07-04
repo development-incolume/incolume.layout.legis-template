@@ -1,5 +1,5 @@
 /*
-legis_3_1566489384
+legis_3_1580902133
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -8,6 +8,9 @@ https://www.planalto.gov.br/ccivil_03/css/legis_3.css
   /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
   /*font: normal 10pt Arial, Helvetica, sans-serif;*/
   font-family: Arial, Helvetica, sans-serif;
+  /*qua set  4 21:37:10 -03 2019*/
+  /* Nova sequencia de fontes manual redação 2018/*
+  /*font-family: Calibri, Carlito, Arial, sans-serif; */
   font-size: 10pt;
 }
 
@@ -30,12 +33,19 @@ a:link, a:visited, a:hover{
 .bold{
     font-weight: 900;
 }
-span.adi,
-i.adi,
 b.adi,
+dfn,
+del.adi,
+i.adi,
+s.adi,
+strike.adi,
+span.adi,
 u.adi {
     text-decoration: line-through;
     font-weight: normal;
+}
+del.adi, strike.adi {
+    display: block;
 }
 
 /* Caixa de Alerta */
@@ -67,7 +77,11 @@ blockquote.alert p a{
 #something,
 nav ul li, inputr,
 nav ul input:checked ~li label.abrir {
-    display:none;
+  display:none;
+}
+
+nav ul li{
+  text-decoration: none !important;
 }
 
 nav ul input:checked ~li,
@@ -451,6 +465,11 @@ tr:nth-child(even) {
   }
 }
 
+@media screen and (min-width: 870px){
+  [for=something] { margin-left: 11em; }
+}
+
+
 @media screen and (max-width: 1099px){
   header{
     width:100%; /* Largura total - Se você omitir ocupará toda a linha */
@@ -488,6 +507,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 1100px){
+
+  [for=something] { margin-left: 20em; }
+
   /**/
   header{
   /* Largura total - Se você omitir ocupará toda a linha */
