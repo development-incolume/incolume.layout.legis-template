@@ -1,0 +1,30 @@
+/* reference:
+ font_1568638824.css
+*/
+
+*{
+  /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
+  /*font: normal 10pt Arial, Helvetica, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 10pt;
+}
+body{
+  margin: .8em;
+}
+p{
+  text-indent: 1.8em;
+}
+Center + p, p[align*="CENTER"]{
+	align:center;
+	;
+}
+h1, h2, h3, h4, h5 {text-align:center; margin:0;}
+h1{font-size:16pt;}
+h2{font-size:14pt;}
+h3{font-size:12pt;}
+h4{/*Sem Negrito*/ font-weight: normal;}
+h4{/*Tamanho da fonte*/font-size:10pt}
+h4 {
+  padding-top: .4em;
+  padding-bottom: .1em;
+}

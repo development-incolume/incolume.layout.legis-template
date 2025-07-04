@@ -1,0 +1,10 @@
+/* reference:
+ font_1558099893.css
+*/
+
+*{
+  /* Tamanho e família de fontes; força estilo normal no corpo de texto*/
+  /*font: normal 10pt Arial, Helvetica, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 10pt;
+}

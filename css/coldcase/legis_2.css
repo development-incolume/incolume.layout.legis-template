@@ -1,0 +1,224 @@
+*{
+  /* Tamanho e família de fontes */
+  /*font: normal 10pt Arial, Helvetica, sans-serif;*/
+  font-family: arial;
+}
+
+a:link, a:visited, a:hover{
+  color: #000080;
+  font-family: arial;
+}
+.revogado{text-decoration: line-through;}
+/*
+Oculta os elementos com a classe .mostrar
+Oculta os elementos com a classe .hide-action
+*/
+
+#view .mostrar,
+#view .hide-action {
+  display: block;
+}
+
+/*
+conforme a HASH atual:
+Mostra os elementos com a classe .mostrar
+Mostra os elementos com a classe .hide-action
+*/
+#view .show-action{display: none;}
+
+#view:target .mostrar,
+#view:target .hide-action {
+  display: none;
+}
+/*
+conforme a HASH atual:
+Oculta os elementos com a classe .action-action
+*/
+#view:target .show-action {
+  display: block;
+}
+h1,h2, h3{text-align:center; margin:0;}
+p{
+    /* Tamanho e família de fontes */
+    /*font: 20px Arial, Helvetica, sans-serif;*/
+    font-size: 10pt;
+    padding:0;
+    text-indent: 5em;
+    text-align:justify;
+}
+p#epigrafe {
+  /*font-size: 3vmin;*/
+  font-weight: 900; /*Negrito*/
+  color: #000080;
+  margin:0;
+  padding:0;
+  text-align:center;
+  text-decoration: underline;
+  text-indent: 0;
+}
+p#ementa{
+  /*font-size: 3vmin;*/
+  float: right;
+  width: 50%;
+  display: block;
+  color: #800000;
+  padding: 3em;
+  padding-top:3em; /* Espaçamento do texto em baixo */
+  padding-bottom:2em; /* Espaçamento do texto em baixo */
+  padding-left:50%; /* Espaçamento do texto em baixo */
+  padding-right:0em; /* Espaçamento do texto em baixo */
+  text-align:justify;
+  text-indent: 0;
+  }
+#data, #presidente, .ministro, .dou{
+  /*
+  text-align:right;
+  */
+  padding:0;
+  text-indent: 0;
+}
+p#data{   }
+p#presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0;}
+p.ministro{display: block;font-style:italic;margin:0;}
+p.dou {font-weight: bold;color:#F00;}
+
+
+.textoalterado{
+  blockquote{
+   padding-right:0;
+   padding-left:2em;
+   margin-right:1em;
+   text-align:justify;
+   font-style: italic;
+   color: red;
+   }
+}
+
+
+@media print{
+  a:after {content: " (" attr(href) ")";}
+  a:link, a:visited { color: #000; font-weight: bold;text-decoration: underline;}
+
+header{
+    padding-top: 0em;
+    display: block;
+    margin:0;
+    text-align:center;
+  }
+header::before{
+    content: "";
+    background-image:url(http://www.planalto.gov.br/ccivil_03/Brastra.gif);
+    background-size: 80px 80px;
+    background-position:center;
+    background-repeat:no-repeat;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    display: inline-block;
+    /*size of your image*/
+    height: 100px;
+    width:100px;
+    /*if you want to change the position you can use margins or:*/
+    /*position:relative;*/
+  }
+
+  h1{font-size:16;}
+  h2{font-size:14;}
+  h3{font-size:12;}
+  h1,h2, h3{margin:0;}
+
+  h1, h2, h3, h4, h5{
+    color:#000;
+  }
+
+  p.dou{color:#000; text-align:center; }
+  p#epigrafe{
+    padding-top:1em;
+  }
+  p#ementa{
+    padding-top: 1.5pt;	
+    padding-bottom:1.5pt;
+    color:#000;
+  }
+
+
+  #view .mostrar,
+  #view .show-action,
+  #view .hide-action,
+  #view:target .mostrar,
+  #view:target .hide-action {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1099px){
+  header{
+    width:100%; /* Largura total - Se você omitir ocupará toda a linha */
+    height: auto;
+    color: #808000; /* Cor da fonte */
+    padding-top: 0em;
+    display: block;
+    margin:0;
+    /* Espaçamento do texto a esquerda */
+    /*padding-left:1em;*/
+    text-align:center;
+    }
+  header::before{
+    content: "";
+    /*background-image:url(https://image.freepik.com/vetores-gratis/tux-personagem-com-papel-em-branco-para-o-seu-texto_52478.jpg);*/
+    background-image:url(http://www.planalto.gov.br/ccivil_03/Brastra.gif);
+    background-size: 100% 100%;
+    display: inline-block;
+    /*size of your image*/
+    height: 82px;
+    width:82px;
+    /*if you want to change the position you can use margins or:*/
+    /*position:relative;*/
+  }
+  p#epigrafe{
+    padding-top: 1em;
+  }
+  h1{font-size:16pt;}
+  h2{font-size:14pt;}
+  h3{font-size:12pt;}
+}
+
+@media screen and (min-width: 1100px){
+  /**/
+  header{
+  /* Largura total - Se você omitir ocupará toda a linha */
+  /*width:100%;*/
+  height: 150px;
+  color: #808000; /* Cor da fonte */
+  background: #fff url("http://www.planalto.gov.br/ccivil_03/Brastra.gif") 10em 1.5em no-repeat;
+  background-size: 82px 82px;
+  padding-top: 0em;
+  display: block;
+  margin:0;
+  /* Espaçamento do texto a esquerda */
+  /*padding-left:1em;*/
+  text-align:center;
+  }
+header h1 {
+  /*display: none;*/
+  /* Tamanho e família de fontes */
+  /*font: bold 44px Arial, Helvetica, sans-serif;*/
+  padding-top:1em; /* Espaçamento do texto no topo */
+  padding-bottom:0em; /* Espaçamento do texto em baixo */
+  vertical-align: middle;
+  display: block;
+  }
+header h2, header h3 {
+  /*display: none;*/
+  /* Espaçamento do texto no topo */
+  padding-top:0em;
+  /* Tamanho e família de fontes */
+  /*font: bold 28px Arial, Helvetica, sans-serif;*/
+  vertical-align: middle;
+  display: block;
+  }
+  h1{font-size:16pt;}
+  h2{font-size:14pt;}
+  h3{font-size:12pt;}
+
+}
