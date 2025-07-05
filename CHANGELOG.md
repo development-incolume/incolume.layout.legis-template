@@ -10,6 +10,12 @@ This file was automatically generated for [incolume.py.changelog](https://github
 ---
 
 
+## [0.7.0]	 &#8212; 	2025-07-05:
+### Changed
+  - Compatibilidade com nova estrutura;
+  - Realocação de elementos;
+  - Alteração de encode para modelos;
+
 ## [0.6.0]	 &#8212; 	2025-07-04:
 ### Added
   - Imagens;
@@ -50,3 +56,4 @@ This file was automatically generated for [incolume.py.changelog](https://github
 [0.4.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.3.0...0.4.0
 [0.5.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.4.0...0.5.0
 [0.6.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.5.0...0.6.0
+[0.7.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.6.0...0.7.0
