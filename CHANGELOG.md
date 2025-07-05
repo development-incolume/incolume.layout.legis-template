@@ -10,6 +10,12 @@ This file was automatically generated for [incolume.py.changelog](https://github
 ---
 
 
+## [0.6.0]	 &#8212; 	2025-07-04:
+### Added
+  - Imagens;
+### Changed
+  - Refinamentos no CSS para produção;
+
 ## [0.5.0]	 &#8212; 	2025-07-04:
 ### Added
   - Classes para facilitar aplicação decreto 9191;
@@ -43,3 +49,4 @@ This file was automatically generated for [incolume.py.changelog](https://github
 [0.3.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.2.0...0.3.0
 [0.4.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.3.0...0.4.0
 [0.5.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.4.0...0.5.0
+[0.6.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.5.0...0.6.0
