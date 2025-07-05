@@ -1,5 +1,5 @@
 /*
-legis_3l2
+legis_3n0
 disponivel em:
 http://www.planalto.gov.br/ccivil_03/css/legis_3.css
 https://www.planalto.gov.br/ccivil_03/css/legis_3.css
@@ -11,15 +11,29 @@ https://www.planalto.gov.br/ccivil_03/css/legis_3.css
   font-size: 10pt;
 }
 body{
-    margin-bottom: 5em;
+  margin: 1.5em;
+  margin-bottom: 40em;
 }
 a:link, a:visited, a:hover{
   color: #000080;
   font-family: arial;
 }
-.escoder{display: None; visibility}
+.esconder{
+  display: None;
+}
+.bold{
+    font-weight: 900;
+}
+span.adi,
+i.adi,
+b.adi,
+u.adi {
+    text-decoration: line-through;
+    font-weight: normal;
+}
 
 /* Caixa de Alerta */
+/*=================*/
 blockquote.alert{
     border: 2px solid red;
     margin-top: 3em;
@@ -42,6 +56,52 @@ blockquote.alert p a{
     text-align: center;
 }
 
+/*   Nav retratil  */
+/*=================*/
+#something,
+nav ul li, inputr,
+nav ul input:checked ~li label.abrir {
+    display:none;
+}
+
+nav ul input:checked ~li,
+nav ul li.fixo, li.abrir {
+    display: block;
+}
+
+nav ul li label {
+    color: #000080;
+    font-weight: 900;
+    margin-left: 145px;
+    cursor: pointer;
+}
+nav ul li label span{
+  display: None;
+  visibility: hidden;
+}
+nav ul li label.abrir {
+    align:right;
+    cursor: copy;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+nav ul li.last {
+    order: 2;
+}
+nav ul li .fa-search{
+  color: red;
+  margin-left: -.5em;
+}
+nav ul li .textoimpressao img{
+  height: 2em;
+}
+
+/*=================*/
+.fas, .fab{
+  font-size: 1.3em;
+}
 /*======================================================================================*/
 p.redacaodada,
 #textoimpressao p,
@@ -82,13 +142,16 @@ nav ul {
  /*padding: 0 0 0 0;*/
  /*text-indent: 2em;*/
 }
-li{
+nav li{
+ list-style-type: none;
+  margin-left: 0;
   margin-bottom:.4em;
 }
 /*======================================================================================*/
 #view .redacaodada,
 #view .hide-action,
 #view:target .show-action,
+#textoimpressao:target .esconder,
 #textoimpressao .textoimpressao{
   display: block;
 }
@@ -118,10 +181,33 @@ Oculta os elementos com a classe .hide-action
 h1{font-size:16pt;}
 h2{font-size:14pt;}
 h3{font-size:12pt;}
+
 h1, h2, h3, h4, h5 {text-align:center; margin:0;}
+h4, h6 {
+    padding-top: .4em;
+    padding-bottom: .1em;
+}
+h5{
+    font-weight: normal;
+    padding-top: -.2em;
+    padding-bottom: .1em;
+}
+h4.letra_espaco,
+h5.letra_espaco{
+    letter-spacing: .15em;
+    font-weight: 600;
+}
+h4.caixa_alta,
+h5.caixa_alta,
+h6.caixa_alta,
+p.caixa_alta,
+span.caixa_alta {
+    text-transform: uppercase;
+}
 h4 {/*Sem Negrito*/ font-weight: normal; /*Tamanho da fonte*/ font-size: 10pt; }
-h5 {/*font-weight: bold;*/ text-transform: uppercase; /*Tamanho da fonte*/ font-size:10pt; }
+h5 {/*Tamanho da fonte*/ font-size:10pt; }
 h6 {text-align:left; font-weight: bold; font-size: 10pt; margin-bottom:.8em; text-indent: 2em;}
+
 p{
     /* Tamanho e família de fontes */
     /*font: 20px Arial, Helvetica, sans-serif;*/
@@ -161,6 +247,11 @@ p.ementa{
   text-align:justify;
   text-indent: 0;
   }
+
+.dou {color: red;}
+.dou center{text-align: center; color: red;}
+.dou a{color: red;}
+/* p.dou {font-weight: bold; color:#F00;} */
 p.presidente, p.ministro, p.dou{
   /*
   text-align:right;
@@ -168,11 +259,9 @@ p.presidente, p.ministro, p.dou{
   padding:0;
   text-indent: 0;
 }
-p.data{
-}
+p.data{}
 p.presidente {font-decoration: none;margin-bottom:0;padding-bottom: 0; text-transform: uppercase;}
 p.ministro{display: block;font-style:italic;margin:0;}
-p.dou {/*font-weight: bold;*/color:#F00;}
 blockquote.textoalterado{
     padding-right: 0;
     padding-left: 2em;
@@ -181,22 +270,56 @@ blockquote.textoalterado{
     /*font-style: italic;*/
     /*color: red;*/
 }
+/*== Formatação Tabelas  ==*/
+/*=========================*/
+table.tabelarevogada, table.tabelarevogada caption{
+    text-decoration: line-through;
+}
+#view table.tabelarevogada,
+#view table.tabelarevogada caption{
+    text-decoration: line-through;
+}
+#textoimpressao table,
+#textoimpressao table caption,
+#textoimpressao table.tabelarevogada,
+#textoimpressao:target table.tabelarevogada,
+#textoimpressao table.tabelarevogada caption,
+#textoimpressao:target table.tabelarevogada caption{
+    text-decoration: line-through;
+}
+
+#view:target table.tabelarevogada,
+#view:target table.tabelarevogada caption{
+    display: None
+}
+
+#textoimpressao:target table,
+#textoimpressao:target table caption{
+    text-decoration: none;
+}
 table{
     width: 85%;
     border-collapse: collapse;
+    margin-top: 1.8em;
     margin-left: auto;
     margin-right: auto;
 }
-th {
+table, th, td {
+    border: 1px solid black;
+    padding-left: 1em;
+}
+table caption {
+    text-align: center;
+    caption-side: bottom;
+}
+thead, th {
+    background-color: #d0d0d0;
+    border-bottom: 1px double black !important;
     height: 2.2em;
     line-height: 2.2em;
     text-align: left;
-    background-color: #F5F5F5;
 }
-table, th, td {
-    border: 1px solid black;
-}
-td, tr{
+td, tr {
     height: 1.4em;
     line-height: 1.4em;
 }
@@ -222,7 +345,7 @@ tr:nth-child(even) {
   }
   header::before{
     content: "";
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasao.png");
     background-size: 80px 80px;
     background-position:center;
     background-repeat:no-repeat;
@@ -319,7 +442,7 @@ tr:nth-child(even) {
   header::before{
     content: "";
     /*background-image:url(https://image.freepik.com/vetores-gratis/tux-personagem-com-papel-em-branco-para-o-seu-texto_52478.jpg);*/
-    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png");
+    background-image:url("http://www.planalto.gov.br/ccivil_03/img/brasao.png");
     background-size: 100% 100%;
     display: inline-block;
     /*size of your image*/
@@ -347,7 +470,7 @@ tr:nth-child(even) {
   /*width:100%;*/
   height: 110px;
   color: #808000; /* Cor da fonte */
-  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/brasaorep.png") 10em 1.5em no-repeat;
+  background: #fff url("http://www.planalto.gov.br/ccivil_03/img/brasao.png") 10em 1.5em no-repeat;
   background-size: 82px 82px;
   padding-top: 0em;
   display: block;

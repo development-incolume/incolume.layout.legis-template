@@ -1,0 +1,37 @@
+# CHANGELOG
+
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commit](https://www.conventionalcommits.org/pt-br/v1.0.0/).
+
+This file was automatically generated for [incolume.py.changelog](https://github.com/development-incolume/incolume.py.changelog/-/tree/0.14.0)
+
+---
+
+
+## [0.4.0]	 &#8212; 	2025-07-04:
+### Added
+  - Configuração dou;
+  - Configuração novas classes;
+  - Configuração para caixa de alerta;
+
+## [0.3.0]	 &#8212; 	2025-07-04:
+### Added
+  - Classes para modificadores especiais(ADI, ADIN, e afins) acrescentada;
+  - Familia de fontes definida no manual oficial de redação definida como padrão;
+  - Elemento nav para metainformação de alteradores;
+
+## [0.2.0]	 &#8212; 	2025-07-04:
+### Added
+  - Estrutura base do layout definida em legis_3.css;
+
+## 0.1.0	 &#8212; 	2025-07-04:
+### Added
+  - Inicio do projeto de emancipação do estilo CSS para legislação do executivo federal;
+
+---
+
+[0.2.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.1.0...0.2.0
+[0.3.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.2.0...0.3.0
+[0.4.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.3.0...0.4.0
