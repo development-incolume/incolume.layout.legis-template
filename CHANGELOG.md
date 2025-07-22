@@ -10,6 +10,12 @@ This file was automatically generated for [incolume.py.changelog](https://github
 ---
 
 
+## [0.9.0]	 &#8212; 	2025-07-22:
+### Changed
+  - Atualização da portaria de diretos autorais para os atos do executivo federal;
+### Fixed
+  - Adequação dos links com enderaçamento web;
+
 ## [0.8.0]	 &#8212; 	2025-07-22:
 ### Changed
   - Alterado a URL de pesquisa `http://www4.planalto.gov.br/legislacao/menu-de-relevancia/pesquisa-de-legislacao` > `https://legislacao.presidencia.gov.br`;
@@ -67,3 +73,4 @@ This file was automatically generated for [incolume.py.changelog](https://github
 [0.6.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.5.0...0.6.0
 [0.7.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.6.0...0.7.0
 [0.8.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.7.0...0.8.0
+[0.9.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.8.0...0.9.0
