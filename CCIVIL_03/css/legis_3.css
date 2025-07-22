@@ -259,7 +259,7 @@ p.epigrafe {
 p.epigrafe a{
   color: #000080;
   font-weight: bold; /*Negrito*/
-  text-decoration: underline; /*Sem sublinhado*/
+  text-decoration: underline; /*Com sublinhado*/
 }
 p.ementa{
   /*font-size: 3vmin;*/
