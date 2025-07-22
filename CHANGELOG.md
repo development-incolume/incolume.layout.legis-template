@@ -10,6 +10,15 @@ This file was automatically generated for [incolume.py.changelog](https://github
 ---
 
 
+## [0.8.0]	 &#8212; 	2025-07-22:
+### Changed
+  - Alterado a URL de pesquisa `http://www4.planalto.gov.br/legislacao/menu-de-relevancia/pesquisa-de-legislacao` > `https://legislacao.presidencia.gov.br`;
+  - Estrutura realocada para refletir mapeamento em produção;
+  - Carregamento de CSS ajustado;
+  - Nome do diretório raiz alterado para caixa alta;
+  - Alterado encode de iso8859-1 para utf-8;
+  - Path para elementos importados em execução alterado para chamadas em HTTP;
+
 ## [0.7.0]	 &#8212; 	2025-07-05:
 ### Changed
   - Compatibilidade com nova estrutura;
@@ -57,3 +66,4 @@ This file was automatically generated for [incolume.py.changelog](https://github
 [0.5.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.4.0...0.5.0
 [0.6.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.5.0...0.6.0
 [0.7.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.6.0...0.7.0
+[0.8.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.7.0...0.8.0

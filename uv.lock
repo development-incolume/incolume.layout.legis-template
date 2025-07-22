@@ -374,7 +374,7 @@ wheels = [
 
 [[package]]
 name = "incolume-layout-legis-template"
-version = "0.2.0a0"
+version = "0.8.0"
 source = { virtual = "." }
 
 [package.dev-dependencies]
