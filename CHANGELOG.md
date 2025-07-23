@@ -10,6 +10,13 @@ This file was automatically generated for [incolume.py.changelog](https://github
 ---
 
 
+## [0.10.0]	 &#8212; 	2025-07-23:
+### Added
+  - Modelo para novas configurações CSS;
+  - Dois favicon utilizados pelo executivo nos ultimos anos;
+### Fixed
+  - Pequenos ajustes no CSS referentes a epigrafe;
+
 ## [0.9.0]	 &#8212; 	2025-07-22:
 ### Changed
   - Atualização da portaria de diretos autorais para os atos do executivo federal;
@@ -74,3 +81,4 @@ This file was automatically generated for [incolume.py.changelog](https://github
 [0.7.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.6.0...0.7.0
 [0.8.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.7.0...0.8.0
 [0.9.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.8.0...0.9.0
+[0.10.0]: https://github.com/development-incolume/incolume.layout.legis-template/compare/0.9.0...0.10.0
